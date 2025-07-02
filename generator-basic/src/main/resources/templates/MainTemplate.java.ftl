@@ -17,7 +17,6 @@ public class MainTemplate {
         while (scanner.hasNextInt()) {
 </#if>
 
-
             // Read the number of integers
             int n = scanner.nextInt();
 

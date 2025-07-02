@@ -28,19 +28,20 @@ public class DynamicGenerator {
         mainTemplateConfig.setLoop(false);
         mainTemplateConfig.setOutputMessage("Sum Output：");
 
-        doGenerator(sourcePath, targetPath, mainTemplateConfig);
+        doGenerate(sourcePath, targetPath, mainTemplateConfig);
     }
 
 
     /**
      * Generates a file from a FreeMarker template.
+     *
      * @param sourcePath the path to the FreeMarker template file
      * @param targetPath the path where the generated file will be saved
      * @param templateConfig the configuration object for the template, which contains the data to be processed
-     * @throws IOException
-     * @throws TemplateException
+     * @throws IOException if there is an error reading or writing files
+     * @throws TemplateException if there is an error processing the template
      */
-    public static void doGenerator(String sourcePath, String targetPath, Object templateConfig) throws IOException, TemplateException {
+    public static void doGenerate(String sourcePath, String targetPath, Object templateConfig) throws IOException, TemplateException {
         // Create a FreeMarker configuration instance, specifying the version
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
 
