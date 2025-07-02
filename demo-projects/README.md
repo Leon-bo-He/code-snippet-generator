@@ -1,0 +1,1 @@
+> Stores the base template code used in the project, for building a code generator.
