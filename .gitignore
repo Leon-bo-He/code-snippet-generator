@@ -2,6 +2,7 @@
 
 .idea
 code-snippet-generator.iml
+/generator-maker/generated/
 
 ### Java template
 # Compiled class file

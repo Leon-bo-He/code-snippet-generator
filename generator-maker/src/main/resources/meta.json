@@ -1,0 +1,58 @@
+{
+  "name": "acm-template-pro-generator",
+  "description": "ACM Template Demo Generator",
+  "basePackage": "life.hebo",
+  "version": "1.0",
+  "author": "bobo",
+  "createTime": "2025-07-01",
+  "fileConfig": {
+    "sourcePath": "/Users/bo/IdeaProjects/YuPi/code-snippet-generator/demo-projects/acm-template-pro",
+    "targetRootPath": "generated",
+    "type": "dir",
+    "files": [
+      {
+        "sourcePath": "src/life/hebo/acm/MainTemplate.java.ftl",
+        "targetPath": "src/life/hebo/acm/MainTemplate.java",
+        "type": "file",
+        "generateType": "dynamic"
+      },
+      {
+        "sourcePath": ".gitignore",
+        "targetPath": ".gitignore",
+        "type": "file",
+        "generateType": "static"
+      },
+      {
+        "sourcePath": "README.md",
+        "targetPath": "README.md",
+        "type": "file",
+        "generateType": "static"
+      }
+    ]
+  },
+  "modelConfig": {
+    "models": [
+      {
+        "fieldName": "loop",
+        "type": "boolean",
+        "description": "Need while loop? (true/false)",
+        "defaultValue": false,
+        "abbr": "l"
+      },
+      {
+        "fieldName": "author",
+        "type": "String",
+        "description": "Author of the generated code",
+        "defaultValue": "bobo",
+        "abbr": "a"
+      },
+      {
+        "fieldName": "outputMessage",
+        "type": "String",
+        "description": "Output message prefix",
+        "defaultValue": "Sum: ",
+        "abbr": "o"
+      }
+    ]
+  }
+}
