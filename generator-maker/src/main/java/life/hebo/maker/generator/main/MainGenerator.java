@@ -42,5 +42,29 @@ public class MainGenerator {
         DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
 
 
+        // cli.command.ConfigCommand
+        sourceFilePath = inputResourcePath + File.separator + "templates/java/cli/command/ConfigCommand.java.ftl";
+        targetFilePath = targetBaseJavaPackagePath + "/cli/command/ConfigCommand.java";
+        DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
+
+        // cli.command.GenerateCommand
+        sourceFilePath = inputResourcePath + File.separator + "templates/java/cli/command/GenerateCommand.java.ftl";
+        targetFilePath = targetBaseJavaPackagePath + "/cli/command/GenerateCommand.java";
+        DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
+
+        // cli.command.ListCommand
+        sourceFilePath = inputResourcePath + File.separator + "templates/java/cli/command/ListCommand.java.ftl";
+        targetFilePath = targetBaseJavaPackagePath + "/cli/command/ListCommand.java";
+        DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
+
+        // cli.CommandExecutor
+        sourceFilePath = inputResourcePath + File.separator + "templates/java/cli/CommandExecutor.java.ftl";
+        targetFilePath = targetBaseJavaPackagePath + "/cli/CommandExecutor.java";
+        DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
+
+        // Main
+        sourceFilePath = inputResourcePath + File.separator + "templates/java/Main.java.ftl";
+        targetFilePath = targetBaseJavaPackagePath + "/Main.java";
+        DynamicFileGenerator.doGenerate(sourceFilePath , targetFilePath, meta);
     }
 }

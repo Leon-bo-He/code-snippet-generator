@@ -1,20 +1,15 @@
-package life.hebo.maker.cli;
+package ${basePackage}.cli;
 
-import life.hebo.maker.cli.command.ConfigCommand;
-import life.hebo.maker.cli.command.GenerateCommand;
-import life.hebo.maker.cli.command.ListCommand;
-
+import ${basePackage}.cli.command.ConfigCommand;
+import ${basePackage}.cli.command.GenerateCommand;
+import ${basePackage}.cli.command.ListCommand;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
-/**
- * @author BO HE
- */
-@Command(name = "code generator",
+@Command(name = "${name}",
                      mixinStandardHelpOptions = true,
-                     description = "A command line interface for code generator.")
+                     description = "${description}")
 public class CommandExecutor implements Runnable{
-
 
     private final CommandLine commandLine;
 
@@ -28,7 +23,7 @@ public class CommandExecutor implements Runnable{
 
     @Override
     public void run() {
-        System.out.println("Please specify a command.");
+        System.out.println("Please specify a command. Use --help for more information.");
     }
 
     public Integer doExecute(String[] args) {

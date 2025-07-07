@@ -1,12 +1,12 @@
 {
   "name": "acm-template-pro-generator",
-  "description": "ACM Template Demo Generator",
+  "description": "A command line interface for code generator - ACM Template Demo Generator",
   "basePackage": "life.hebo",
   "version": "1.0",
   "author": "bobo",
   "createTime": "2025-07-01",
   "fileConfig": {
-    "sourcePath": "/Users/bo/IdeaProjects/YuPi/code-snippet-generator/demo-projects/acm-template-pro",
+    "sourceRootPath": "/Users/bo/IdeaProjects/YuPi/code-snippet-generator/demo-projects/acm-template-pro",
     "targetRootPath": "generated",
     "type": "dir",
     "files": [

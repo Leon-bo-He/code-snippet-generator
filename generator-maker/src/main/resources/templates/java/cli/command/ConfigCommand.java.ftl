@@ -1,14 +1,10 @@
-package life.hebo.maker.cli.command;
+package ${basePackage}.cli.command;
 
 import cn.hutool.core.util.ReflectUtil;
-import life.hebo.maker.model.DataModel;
+import ${basePackage}.model.DataModel;
 import picocli.CommandLine.Command;
 
 import java.lang.reflect.Field;
-
-/**
- * @author BO HE
- */
 
 @Command(name = "config",
          mixinStandardHelpOptions = true,
